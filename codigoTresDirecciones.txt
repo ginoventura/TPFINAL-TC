@@ -1,0 +1,42 @@
+a = 3
+b = 2
+z = 0
+
+param1 = a
+param2 = b
+t0 = call sumar
+
+resultadoSuma = t0
+resultadoMult = 0
+
+t1 = resultadoSuma >= 5
+t2 = a == 3
+t3 = t1 || t2
+if t3 goto L0
+goto L1
+L0:
+
+param1 = a
+param2 = resultadoSuma
+t4 = call multiplicar
+
+resultadoMult = t4
+goto L2
+L1:
+resultadoMult = 0
+L2:
+final = resultadoMult
+
+sumar:
+a = param1
+b = param2
+t5 = a + b
+return t5
+
+multiplicar:
+e = param1
+f = param2
+t6 = e * f
+resultado = t6
+return resultado
+

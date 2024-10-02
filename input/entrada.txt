@@ -1,0 +1,25 @@
+int sumar (int a, int b);
+int multiplicar (int e, int f);
+
+int a = 3, b = 2;
+int z;
+
+int resultadoSuma = sumar(a, b);
+int resultadoMult;
+
+if ((resultadoSuma >= 5) || (a == 3)) {
+    resultadoMult = multiplicar(a, resultadoSuma);
+} else {
+    resultadoMult = 0;
+}
+
+int final = resultadoMult;
+
+int sumar (int a, int b) {
+    return a + b;
+}
+
+int multiplicar (int e, int f) {
+    int resultado = e * f;
+    return resultado;
+}
